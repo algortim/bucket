@@ -24,7 +24,7 @@ def run_bot(r, comments_replied_to):
 	for comment in r.subreddit('learnpython').comments(limit=25):
 		if "could care less" in comment.body and comment.id not in comments_replied_to and not comment.author == r.user.me():
 			print("String \"could care less\" found in comment " + comment.id)
-			comment.reply("You *coudn't* care less.\n\n"">could care less\n\n"
+			comment.reply("You *couldn't* care less.\n\n"">could care less\n\n"
 						  "As an expression for not or hardly caring just makes no sense.\n\n"
 						  "Here is a video to explain in further detail:\n\n"
 						  "[Dear America... | David Mitchell's Soap Box](https://www.youtube.com/watch?v=om7O0MFkmpw)")
